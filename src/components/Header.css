@@ -1,0 +1,60 @@
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* background-color:rgb(222, 156, 209); */
+    height: 10vh;
+    font-size: 23px;
+    font-weight: 700;
+    /* padding-bottom:25px; */
+}
+
+nav li {
+    list-style-type: none;
+}
+ul.menu,
+ul.signin {
+    display: flex;
+    gap: 50px;
+    justify-content: space-between;
+    /* text-shadow:0.5px 0px black; */
+}
+
+#signin,
+#signup {
+    padding: 3px;
+    font-size: 18px;
+    border-radius: 6px;
+    font-weight:700;
+}
+#signup{
+    /* background-color:rgb(21, 144, 221); */
+    background-color:rgb(58, 134, 255);
+    color:white;
+    padding:8px;
+    border:2px solid black;
+}
+
+#mylogo{
+    object-fit:contain;
+}
+a{
+    text-decoration: none;
+    color: #7209b7ff;
+}
+a:hover{
+   text-decoration: underline;
+   font-size:24px;
+   /* text-shadow:2px 2px black; */
+}
+
+#signin{
+    border:none;
+}
+#signup{
+           
+    background-color:rgb(58, 134, 255);
+    color:white;
+    padding:8px;
+    border:2px solid black;
+}
