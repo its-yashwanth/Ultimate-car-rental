@@ -18,7 +18,7 @@ function Home()
         </span>
       </div>
       <div id="introimage">
-        <img id="intimg" src={car1} width="900" height="700" alt="Car rental" />
+        <img id="intimg" src={car1} width="800" height="650" alt="Car rental" />
       </div>
     </section>
         </>
