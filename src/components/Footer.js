@@ -17,7 +17,7 @@ const Footer = () => {
       <div className="footer-logo-address">
         <h2 className="footer-title">RENTCARS</h2>
         <address>
-          25566 Hc 1, Glenallen, Alaska, 99588, USA<br />
+          560062 Hc 1, Yeshwantpura, Bangalore, 99588, INDIA<br />
           <span className="footer-phone">+603 4784 273 12</span><br />
           <a href="mailto:rentcars@gmail.com" className="footer-email">rentcars@gmail.com</a>
         </address>

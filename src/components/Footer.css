@@ -81,3 +81,16 @@
       margin-bottom: 20px;
     }
   }
+
+  .footer-icons>i{
+    padding:5px;
+  }
+
+  li{
+    padding:4px;
+  }
+
+  .footer-title,.footer-phone,.footer-email
+  {
+    padding:4px;
+  }

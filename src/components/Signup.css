@@ -1,0 +1,63 @@
+.login_card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 350px; /* Match the form width to the image */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .my_label {
+    font-weight: bold;
+  }
+  
+  .form-control {
+    border-radius: 25px; /* Rounded input fields */
+    border: 1px solid #ccc;
+    padding:8px;
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  
+  .phone_input {
+    width: 100%;
+  }
+  
+  .btn_login {
+    background-color: #6200ea;
+    color: white;
+    border-radius: 25px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .btn_login:hover {
+    background-color: #3700b3;
+  }
+  
+  /* src/components/SignupForm.css */
+  .login_prompt {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 14px;
+  }
+  .login_prompt a {
+    color: #6200ea; /* Match the color of the button */
+    text-decoration: none;
+  }
+  
+  .login_prompt a:hover {
+    text-decoration: underline;
+  }
+
+  .login_page_wrp {
+    background-image: url('./images/carsignup.jpg'); /* Ensure the image path is correct */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Align form to the right */
+    padding-right:160px;/* Space from the right edge */
+  }

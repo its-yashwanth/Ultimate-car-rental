@@ -8,12 +8,15 @@ import Layout from './Layout';
 import Home from './components/Home';
 import Rent from './components/Rent';
 import Contact from './components/Contact';
+import Signup from './components/Signup'
 const router =createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<Layout/>}>
     <Route path='' element={<Home/>}/>
     <Route path='Rent/' element={<Rent/>}/>
     <Route path='Contact/' element={<Contact/>}/>
+    <Route path='Contact/' element={<Contact/>}/>
+    <Route path='Signup/' element={<Signup/>}/>
 
     </Route>
   )
