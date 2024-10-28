@@ -19,8 +19,8 @@ function Header()
       <ul className="signin">
         <button id="signin">Sign In</button>
         <button id="signup"><i className="fa fa-fw fa-user"></i> Sign Up</button>
-      </ul>
-    </nav></div>
+      </ul></nav>
+    </div>
             </>
         )
     }

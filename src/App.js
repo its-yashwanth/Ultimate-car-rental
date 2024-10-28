@@ -1,5 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
+//import CarDetails from './components/CarDetails';
+// import Contact from './components/Contact'; 
 
 function App() {
   return (
@@ -18,8 +20,11 @@ function App() {
           Learn React
         </a>
       </header>
+      
     </div>
   );
 }
 
 export default App;
+
+
