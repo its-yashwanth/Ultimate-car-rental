@@ -8,7 +8,8 @@ import Layout from './Layout';
 import Home from './components/Home';
 import Rent from './components/Rent';
 import Contact from './components/Contact';
-import Signup from './components/Signup'
+import Signup from './components/Signup';
+import CarDetails from './components/CarDetails';
 const router =createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<Layout/>}>
@@ -17,7 +18,7 @@ const router =createBrowserRouter(
     <Route path='Contact/' element={<Contact/>}/>
     <Route path='Contact/' element={<Contact/>}/>
     <Route path='Signup/' element={<Signup/>}/>
-
+    <Route path='/car/:id' element={<CarDetails/>}/>
     </Route>
   )
 )

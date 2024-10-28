@@ -39,5 +39,4 @@ function CarDetails() {
         </div>
     );
 }
-
 export default CarDetails;

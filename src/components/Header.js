@@ -6,8 +6,6 @@ function Header()
             <>
             <div><nav>
       <ul className="logo">
-        {/* You can import the image properly if it's local */}
-        {/* <li><img src="https://www.mychoize.com/_next/static/media/MyChoize-logo.ef72a172.svg" width="150" height="300" alt="logo" /></li> */}
         <li className="mainlogo"><img id="mylogo" src={require('./images/image.png')} width="140" height="80" alt="logo" /></li>
       </ul>
       <ul className="menu">
