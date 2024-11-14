@@ -1,4 +1,4 @@
-.car-container {
+/* .car-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -9,7 +9,6 @@
 
 .car-card {
     width: 300px;
-    /* border: 2px solid #ddd; */
     border: 2px solid #801f1f;
     border-radius: 10px;
     padding: 20px;
@@ -51,25 +50,29 @@
     margin: 10px 0;
 }
 
-.price-options div {
+.price-option {
     text-align: center;
     font-size: 14px;
     color: #444;
-    /* color: #4a2fb9; */
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 5px;
+    transition: background-color 0.2s;
 }
 
-.price-options .selected {
-    /* background-color: #e0e0e0; */
-    /* background-color: #047fcb74; */
+.price-option:hover {
+    background-color: rgba(131, 174, 243, 0.5);
+}
+
+.price-option.selected {
     background-color: rgb(131, 174, 243);
-    border-radius: 5px;
-    padding: 5px;
+    font-weight: bold;
+    color: #fff;
 }
 
 .features p {
     font-size: 14px;
     color: #555;
-    /* color: #31c671; */
     margin: 5px 0;
     text-align: center;
 }
@@ -79,17 +82,16 @@
     margin-right: 5px;
 }
 
-/* Details section, hidden by default */
 .details {
     display: none;
     font-size: 14px;
-    /* color: #555; */
     color: #c01414;
     text-align: left;
     margin: 15px 0;
 }
-.details.gear{
-    color:#555
+
+.details.gear {
+    color: #555;
 }
 
 .actions {
@@ -107,19 +109,156 @@
 }
 
 .actions .view-details {
-    background-color:rgb(58, 134, 255);
+    background-color: rgb(58, 134, 255);
     cursor: pointer;
 }
 
 .actions .book-now {
-    background-color: #6a9a55;
+    background-color: #4b7b36;
 }
 
 .actions a:hover {
     opacity: 0.9;
 }
 
-/* Show details when the View Details is toggled */
+.car-card .details {
+    display: block;
+    transition: all 0.3s ease;
+} */
+.car-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 20px;
+}
+
+.car-card {
+    width: 300px;
+    border: 2px solid #801f1f;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s;
+}
+
+.car-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.car-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    object-fit: cover;
+}
+
+.car-card h2 {
+    font-size: 22px;
+    color: #333;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.car-type {
+    font-size: 18px;
+    color: #666;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.price-options {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.price-option {
+    text-align: center;
+    font-size: 14px;
+    color: #444;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    transition: background-color 0.2s, border-color 0.2s;
+}
+
+.price-option:hover {
+    background-color: rgba(131, 174, 243, 0.3);
+    border-color: #83aef3;
+}
+
+.price-option.selected {
+    background-color: rgb(131, 174, 243);
+    font-weight: bold;
+    color: #fff;
+    border-color: rgb(131, 174, 243);
+}
+
+.features p {
+    font-size: 14px;
+    color: #555;
+    margin: 5px 0;
+    text-align: center;
+}
+
+.features span {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.details {
+    display: none;
+    font-size: 14px;
+    color: #c01414;
+    text-align: left;
+    margin: 15px 0;
+}
+
+.details.gear {
+    color: #555;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.actions a {
+    text-decoration: none;
+    font-size: 16px;
+    padding: 8px 16px;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.2s, opacity 0.2s;
+}
+
+.actions .view-details {
+    background-color: rgb(58, 134, 255);
+    cursor: pointer;
+}
+
+.actions .book-now {
+    background-color: #4b7b36;
+    cursor: not-allowed; /* Initially disabled */
+}
+
+.actions .book-now.active {
+    background-color: #28a745;
+    cursor: pointer; /* Enabled when a price option is selected */
+}
+
+.actions a:hover {
+    opacity: 0.9;
+}
+
 .car-card .details {
     display: block;
     transition: all 0.3s ease;
