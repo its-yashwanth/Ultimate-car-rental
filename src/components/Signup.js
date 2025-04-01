@@ -13,17 +13,28 @@ const SignupForm = () => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     const { name, password, email, phone } = formData;
-
-    // Check if all fields are filled
-    if (!name || !password || !email || !phone) {
-      alert('Please fill all fields before submitting the form.');
-    } else {
-      alert('Form submitted successfully!');
+  
+    try {
+      const response = await fetch('http://localhost:5000/signup', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ name, password, email, phone }),
+      });
+      if (response.ok) {
+        alert('Signup successful!');
+      } else {
+        alert('Signup failed.');
+      }
+    } catch (error) {
+      console.error('Error during signup:', error);
     }
   };
+  
 
   return (
     <div className="login_page_wrp">
